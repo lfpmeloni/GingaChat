@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="xyz.felipemeloni.android.gingachat.ChatActivity"
+    android:background="#a3e9a4">
+
+    <LinearLayout
+        android:id="@+id/linear_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#42bd41">
+
+        <TextView android:id="@+id/text_user2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_usuario"
+            android:textSize="16sp"
+            android:textColor="#eeff41"
+            />
+
+        <TextView android:id="@+id/text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@id/linear_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_msg"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_msg"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView"/>
+
+    <LinearLayout
+        android:id="@+id/linear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#72d572"
+        android:layout_below="@+id/edit_message"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btn_msg"
+            android:onClick="sendMsg"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_view"
+            android:onClick="viewMsgs"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/Users/felipemeloni/AndroidStudioProjects/GingaChat/app/src/main/res/layout/activity_chat.xml -->

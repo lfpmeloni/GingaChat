@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GingaChat</string>
+    <string name="txt_user">Digite seu nome:</string>
+    <string name="txt_msg">Digite a mensagem:</string>
+    <string name="txt_usuario">Usuário: </string>
+    <string name="hint_user">Nome</string>
+    <string name="hint_msg">Mensagem</string>
+    <string name="btn_chat">Ir para Chat</string>
+    <string name="btn_msg">Enviar Mensagem</string>
+    <string name="btn_view">Visualizar Mensagens</string>
+    <string name="btn_return">Voltar</string>
+</resources>
